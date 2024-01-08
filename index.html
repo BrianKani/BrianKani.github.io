@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f85ab5a5c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" >
+        <div id="container">
+            <nav>
+                <img src="" class="logo">                 
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Technical Skills</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Brian</span> <br> Welcome to my digital portfolio</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/20240108_171633.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> if the multiverse exists and our counterparts are making the same choices, are their results similar to ours in terms of success and failure?. I am a passionate and innovative Software Engineer dedicated to crafting exceptional digital solutions. With a proven track record in full-stack development, my expertise encompasses designing and implementing robust software architectures, ensuring seamless user experiences. I thrive on challenges and am committed to staying at the forefront of technological advancements. Let's turn ideas into impactful software solutions together.
+                    </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Engineer</span> <br> Lifecycle Development, Scalable Solutions and Seamless intergration</li>
+                                <li><span>Full-Stack Developer</span> <br> Web application development, End-to-End Solutions </li>
+                                <li><span>GIS Data Scientist</span> <br> Spatial Analysis, Geospatial Solutions, Data-Driven Insights.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Dec 2022 - Feb 2023</span> <br> Front-end Developer (Qafa Arabia Trading Co - 3-Month Contract
+                                    )</li>
+                                <li><span>Jan 2022 - March 2022</span> <br> Ministry of Lands and Physical planning (Student intern)</li>
+                                <li><span>June 2023 - Novemeber 2023</span> <br> Back-end Developer (Solid Lift Parts Inc - 6-Month Contract
+                                    )</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Jan 2023 - March 2023</span> <br> ALX Software Engineering Programme</li>
+                                <li><span>2019 - 2024</span> <br> BSc. Geospatial Information Science & Remote Sensing</li>
+                        
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------services--------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Technical skills</h1>
+        <div class="services-list">
+            <div>
+                <i <i class="fa-solid fa-code"></i>></i>
+                <h2>Software Engineering</h2>
+                <p>As a Software Engineer, I have showcased expertise in both frontend and backend development and capable of architecting scalable solutions, implementing clean and efficient code, and collaborating with cross-functional teams. Projects include a Building Security Systems component, demonstrating proficiency in designing and integrating software solutions for complex scenarios</p>
+                    <a href="https://github.com/BrianKani">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Full-Stack Development</h2>
+                <p>Competent in designing and maintaining end-to-end solutions, showcasing proficiency in frontend technologies (HTML, CSS, JavaScript) and backend expertise in server-side scripting and database management. My holistic approach ensures optimized performance, secure coding practices, and dynamic, responsive web applications, contributing to the entire project lifecycle.</p>
+                    <a href="https://github.com/BrianKani">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>GIS Data Science</h2>
+                <p>GIS Data Science. With knowledge in statistical analysis, machine learning algorithms, and spatial analytics, I excel in deriving meaningful insights from complex datasets. My skill set enables me to contribute to informed decision-making in diverse domains such as urban planning, environmental science, and logistics. Through the application of GIS Data Science, I bring a unique blend of data-driven approaches to spatial problem-solving, enhancing the value of geographic information systems in various applications.</p>
+                    <a href="https://github.com/BrianKani">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------portfolio--------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Security Systems in Harlingen and Aransas TX.jfif" >
+                <div class="layer">
+                    <h3>Building System Security</h3>
+                    <p>Explore the future of building security with our Building Security Systems Components. 
+                        A suite of software components designed for managing and fortifying building access, fire alarms, and overall security systems. Through seamless communication using TCP and UDP over IPv4, these components form a robust network ensuring comprehensive building security in various management scenarios</p>
+                    <a href="https://github.com/BrianKani/Building-Security-Sys-Components"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Airbnb Hosts.jfif" >
+                <div class="layer">
+                    <h3>Airbnb Clone</h3>
+                    <p>This application allows and provides users with online platform that connects people looking to rent or lease their properties (such as homes, apartments, or rooms) with travelers seeking temporary accommodations. AirBnB clone, a full-stack application replicating the functionality of the original Airbnb application. It involves both frontend and backend components, ensuring a comprehensive solution. 
+                        The frontend was built using Python under the Flask framework. On the backend, the project manages file and data storage efficiently. Utilizing engines to improve performance. Additionally, the integration of MySQL databases ensures robust data management for user and other information. </p>
+                    <a href="https://github.com/BrianKani/AirBnB_clone_v2"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/aaa.jfif" >
+                <div class="layer">
+                    <h3>Simple Shell</h3>
+                    <p>Simple Shell is a project designed to replicate unix cmd functionality, offering a dynamic and interactive command-line interface. 
+                        With continuous updates and refinements, this shell provides a range of features, including logical operators, multi-line continuation, and built-in commands. Users can run both commands and script files, benefiting from user-friendly features.</p>
+                    <a href="https://github.com/BrianKani/simple_shell"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+         <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-----------------content-------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>kipsangkangogo26@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+254723458443</p>
+                <div class="social-icons">
+                    <a href="https://github.com/BrianKani"><i class="fa-brands fa-github"></i>GitHub</i></a>
+                    <a href="https://www.linkedin.com/in/brian-kangogo/"><i class="fa-brands fa-linkedin"></i>Linkedin</i></a>
+                    <a href="https://twitter.com/BrianKruski"><i class="fa-solid fa-x">
+                    </i></a>
+                    <a href="https://wa.me/254723458443"><i class="fa-brands fa-whatsapp"></i>WhatsApp</i></a>
+                    
+                </div>
+
+                <a href="Images/BrianKipsang_softwareEng.pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Meanwhile <i class="fa-solid fa-computer"></i></i>, in parallel universes, if our counterparts are making the same choices, will they all succeed?</p>
+    </div>
+
+</div>
+
+
+<script>
+    var tabLinks = document.getElementsByClassName('tab-links')
+    var tabContents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove('active-link');
+            }
+        for(tabContent of tabContents){
+            tabContent.classList.remove('active-tab');
+            }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabName).classList.add("active-tab");
+
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0"
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyVwPiBr0ehRj7nwKHiV4x2VaNaqzJqcDGUXTROGO9ENs3JPeGt3XzBXtLlM1DWzbKWXw/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+  </script>
+</body>
+</html>
