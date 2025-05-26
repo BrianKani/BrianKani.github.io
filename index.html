@@ -3,129 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Brian Kipsang | Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f85ab5a5c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header" >
-        <div id="container">
-            <nav>
-                <img src="" class="logo">                 
-                <ul id="sidemenu">
-                    <li> <a href="#header">Home</a></li>
-                    <li> <a href="#services">Technical Skills</a></li>
-                    <li> <a href="#portfolio">Portfolio</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1 class="about15">Hi, I'm <span>Brian</span> <br> I am a Software Engineer
-                    based in Nairobi, Kenya. Specialized in full-stack web development and I'm self-driven and committed to delivering high-quality, scalable solutions for my clients.
-                    In my free time, I enjoy staying up to date with the latest industry
-                    trends and exploring new technologies.</h1>
+    <div class="bg-animation"></div>
+    
+    <!-- Header Section -->
+    <div id="header">
+        <nav>
+            <div class="logo">BK.</div>
+            <ul id="nav-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
             </div>
-        </div>
-    </div>
+        </nav>
 
-
-<!----------------services--------------------->
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Technical skills</h1>
-        <div class="services-list">
-            <div>
-                <i <i class="fa-solid fa-code"></i>></i>
-                <h2>Full-Stack Developement</h2>
-                <p>Software Engineering for both frontend and backend development and capable of architecting scalable solutions, implementing clean and efficient code, and collaborating with cross-functional teams. Projects include a Building Security Systems component, demonstrating proficiency in designing and integrating software solutions for complex scenarios</p>
-                    <a href="https://github.com/BrianKani">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>Network Engineering</h2>
-                <p>
-                    Designing and maintaining comprehensive networking solutions, demonstrating proficiency in TCP/IP protocols, network security principles, and the configuration and troubleshooting of various network devices such as routers, switches, and access points, ensuring reliable and secure connectivity throughout the network infrastructure lifecycle.</p>
-                    <a href="https://github.com/BrianKani">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-app-store"></i>
-                <h2>Data Science</h2>
-                <p>Background in data analysis, machine learning algorithms, and spatial analytics, I excel in deriving meaningful insights from complex datasets. My skill set enables me to contribute to informed decision-making in diverse domains such as urban planning, environmental science, and logistics. Through the application of GIS Data Science, I bring a unique blend of data-driven approaches to spatial problem-solving, enhancing the value of geographic information systems in various applications.</p>
-                    <a href="https://github.com/BrianKani">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------------portfolio--------------------->
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/Security Systems in Harlingen and Aransas TX.jfif" >
-                <div class="layer">
-                    <h3>Building System Security</h3>
-                    <p>Explore the future of building security with our Building Security Systems Components. 
-                        A suite of software components designed for managing and fortifying building access, fire alarms, and overall security systems. Through seamless communication using TCP and UDP over IPv4, these components form a robust network ensuring comprehensive building security in various management scenarios</p>
-                    <a href="https://github.com/BrianKani/Building-Security-Sys-Components"><i class="fas fa-external-link-alt"></i></a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <div class="status-dot"></div>
+                    Available for new opportunities  </div> 
+                
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Brian Kipsang Kangogo</span><br>
+                    Data Scientist
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Certified Data Scientist with expertise in Python, R, SQL, Power BI, and Geospatial Analytics. 
+                    I transform complex data into actionable insights through interactive dashboards, predictive modeling, and machine learning.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
                 </div>
             </div>
-            <div class="work">
-                <img src="Images/Airbnb Hosts.jfif" >
-                <div class="layer">
-                    <h3>Airbnb Clone</h3>
-                    <p>This application allows and provides users with online platform that connects people looking to rent or lease their properties (such as homes, apartments, or rooms) with travelers seeking temporary accommodations. AirBnB clone, a full-stack application replicating the functionality of the original Airbnb application. It involves both frontend and backend components, ensuring a comprehensive solution. 
-                        The frontend was built using Python under the Flask framework. On the backend, the project manages file and data storage efficiently. Utilizing engines to improve performance. Additionally, the integration of MySQL databases ensures robust data management for user and other information. </p>
-                    <a href="https://github.com/BrianKani/AirBnB_clone_v2"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/aaa.jfif" >
-                <div class="layer">
-                    <h3>Simple Shell</h3>
-                    <p>Simple Shell is a project designed to replicate unix cmd functionality, offering a dynamic and interactive command-line interface. 
-                        With continuous updates and refinements, this shell provides a range of features, including logical operators, multi-line continuation, and built-in commands. Users can run both commands and script files, benefiting from user-friendly features.</p>
-                    <a href="https://github.com/BrianKani/simple_shell"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </div>
-         <a href="#" class="btn">See More</a>
-    </div>
-</div>
 
-<!-----------------content-------------->
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i>briankipsang1533@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>+254723458443</p>
-                <div class="social-icons">
-                    <a href="https://github.com/BrianKani"><i class="fa-brands fa-github"></i>GitHub</i></a>
-                    <a href="https://www.linkedin.com/in/brian-kangogo/"><i class="fa-brands fa-linkedin"></i>Linkedin</i></a>
-                    <a href="https://twitter.com/BrianKruski"><i class="fa-solid fa-x">
-                    </i></a>
-                    <a href="https://wa.me/254723458443"><i class="fa-brands fa-whatsapp"></i>WhatsApp</i></a>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-title">Data Analytics</div>
+                        <div class="card-subtitle">Python • R • SQL</div>
+                    </div>
                     
+                    <div class="floating-card card-2">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-title">Machine Learning</div>
+                        <div class="card-subtitle">AI • Predictive Models</div>
+                    </div>
+                    
+                    <div class="floating-card card-3">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="card-title">Geospatial Analytics</div>
+                        <div class="card-subtitle">GIS • Mapping</div>
+                    </div>
                 </div>
-
-                <a href="Images/BrianSofwareEng.pdf" download class="btn btn2">Download Resume</a>
-
             </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Analytics</h3>
+                <p>Expert in data analysis, machine learning algorithms, and statistical modeling. Proficient in deriving meaningful insights from complex datasets using Python, R, and SQL. Specialized in predictive analytics, data visualization, and creating interactive dashboards with Power BI and Tableau.</p>
+                <a href="https://github.com/BrianKani" class="skill-link">
+                    Explore Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>Geospatial Analytics & GIS</h3>
+                <p>Advanced expertise in Geographic Information Systems (GIS) and spatial data analysis. Skilled in creating interactive maps, spatial modeling, and location-based insights for urban planning, environmental science, and logistics optimization using QGIS, ArcGIS, and Python geospatial libraries.</p>
+                <a href="https://github.com/BrianKani" class="skill-link">
+                    View GIS Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Machine Learning & AI</h3>
+                <p>Comprehensive knowledge of machine learning algorithms, deep learning, and artificial intelligence. Experience in building and deploying predictive models, neural networks, and AI solutions. Proficient in TensorFlow, PyTorch, Scikit-learn, and MLOps practices for production-ready ML systems.</p>
+                <a href="https://github.com/BrianKani" class="skill-link">
+                    See AI Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- Certifications Section -->
+<div id="certifications" class="section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications-grid">
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <h3>IBM Data Science Professional Certificate</h3>
+            <p>Coursera (2023)</p>
+        </div>
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Machine Learning</h3>
+            <p>Stanford Online – Andrew Ng (2023)</p>
+        </div>
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Geospatial & Environmental Analysis</h3>
+            <p>University of California, Davis (2022)</p>
+        </div>
+        <!-- Add more as needed -->
+    </div>
+</div>
+
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="section">
+        <h2 class="section-title">My Work</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="project-overlay">
+                        <a href="https://github.com/BrianKani/Building-Security-Sys-Components" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Building Security Analytics System</h3>
+                    <p>Advanced security analytics platform combining IoT sensor data with machine learning algorithms to predict and prevent security threats. Features real-time monitoring, anomaly detection, and automated alert systems using Python, TensorFlow, and real-time data processing frameworks.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="project-overlay">
+                        <a href="https://github.com/BrianKani/AirBnB_clone_v2" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Hospitality Data Analytics Platform</h3>
+                    <p>Comprehensive data analytics solution for hospitality industry with predictive pricing models, occupancy forecasting, and customer behavior analysis. Built with Python Flask, featuring interactive dashboards, MySQL integration, and machine learning-powered recommendations.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-terminal"></i>
+                    <div class="project-overlay">
+                        <a href="https://github.com/BrianKani/simple_shell" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Data Processing Shell Environment</h3>
+                    <p>Custom command-line interface optimized for data science workflows. Features automated data pipeline execution, batch processing capabilities, and integration with popular data science tools. Supports complex data transformations and multi-threaded processing operations.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://github.com/BrianKani" class="btn btn-primary">See More Projects</a>
+        </div>
+    </div>
+
+<!-- Hackathons Section -->
+<div id="hackathons" class="section">
+    <h2 class="section-title">Hackathons</h2>
+    <div class="hackathon-grid">
+        <div class="hack-card">
+            <div class="hack-icon"><i class="fas fa-robot"></i></div>
+            <h3>Amini Data Collection Challenge</h3>
+            <p>Ranked 7<sup>th</sup> in a pan-African competition collecting agricultural and forestry data for AI-driven sustainability tools. Contributed datasets on crops and forests across Africa to build predictive models and support food security initiatives.</p>
+            <a href="https://zindi.africa/competitions/amini-crop-data-citizen-science-challenge/leaderboard" target="_blank" class="hack-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
+            <div class="certificate-preview">
+        <img src="C:\Users\Brian Kipsang\Desktop\DESKTOP\Portfolio_Website\BrianKani.github.io\Images\brian_kipsang-Uwazi Citizen Science Challenge.png" alt="Amini Certificate" class="certificate-thumb">
+    </div>
+        </div>
+        <div class="hack-card">
+            <div class="hack-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI for Social Good</h3>
+            <p>Built an ML model for crop yield prediction. 2nd Place (2022).</p>
+            <a href="https://aiforsocialgood.ca/" target="_blank" class="hack-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Contact Info</h2>
+        <div class="contact-grid">
+            <!-- Left Side -->
+            <div class="contact-left">
+                <p><i class="fas fa-envelope"></i> briankipsang.tech@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +254 723 458443</p>
+                <div class="social-icons">
+                    <a href="https://github.com/BrianKani" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brian-kangogo/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/BrianKruski" target="_blank">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://wa.me/254723458443" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <a href="BrianKipsang-DataScientist" download class="btn btn-primary">Download Resume</a>
+            </div>
+
+            <!-- Right Side -->
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -133,59 +262,6 @@
     </div>
 
     <div class="copyright">
-        <p>In a parallel Universe <i class="fa-solid fa-computer"></i></i> if our counterparts are making the same choices, will they all succeed?</p>
+        <p>In a parallel universe <i class="fas fa-meteor"></i>, if our counterparts are making the same choices, will they all succeed?</p>
     </div>
-
 </div>
-
-
-<script>
-    var tabLinks = document.getElementsByClassName('tab-links')
-    var tabContents = document.getElementsByClassName('tab-contents')
-
-    function opentab(tabName){
-        for(tabLink of tabLinks){
-            tabLink.classList.remove('active-link');
-            }
-        for(tabContent of tabContents){
-            tabContent.classList.remove('active-tab');
-            }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabName).classList.add("active-tab");
-
-    }
-
-</script>
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right ="0"
-    }
-    function closemenu(){
-        sidemenu.style.right ="-200px"
-    }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyVwPiBr0ehRj7nwKHiV4x2VaNaqzJqcDGUXTROGO9ENs3JPeGt3XzBXtLlM1DWzbKWXw/exec';
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById('msg');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => {
-      msg.innerHTML = "Message sent successfully";
-      setTimeout(function () {
-        msg.innerHTML = "";
-      }, 5000);
-      form.reset();
-    })
-    .catch(error => console.error('Error!', error.message));
-});
-
-  </script>
-</body>
-</html>
